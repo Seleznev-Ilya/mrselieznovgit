@@ -1,0 +1,344 @@
+$dark_blue:#414f7e
+$blue:#e6f1fa
+$lite_blue: #3f84cc
+$white:#ffffff
+$alpha: .5
+@font-face
+  font-family: "brutal type"
+  src: url("../fonts/BrutalType-ExtraLight.otf")
+$font:  "brutal type"
+
+p
+  margin: 0
+  padding: 0
+
+body
+  margin: 0
+
+header
+  position: relative
+  background: url("../images/header/header_background.png") no-repeat center
+  @media (max-width: 540px)
+    height: 961px
+  @media (max-width: 768px)
+    height: 961px
+  @media (max-width: 1366px)
+    height: 783px
+  @media (min-width: 1366px)
+    height: 783px
+  @media (min-width: 1920px)
+    height: 1077px
+
+  width: 100%
+  box-sizing: border-box
+  background-size: cover
+  margin: 0
+  padding: 0
+
+.header_container
+  box-sizing: border-box
+  border: .1px solid transparent
+  position: inherit
+  max-width: 1084px
+  min-width: 470px
+  height: 100%
+  margin:
+    left: auto
+    right: auto
+
+.lite
+  @media (max-width: 768px)
+    display: none
+  position: absolute
+  top: 0
+  left: calc(50% - (906px/2))
+  z-index: 5
+
+.logo
+  position: absolute
+
+  @media (max-width: 768px)
+    top: 11px
+    left: 30px
+
+  @media (min-width: 769px)
+    top: 7px
+    left: calc(50% - 80px)
+  @media (min-width: 1920px)
+    top: 36px
+  z-index: 15
+
+.menu_left li:first-child
+  padding-left: 110px
+  @media (max-width: 890px)
+    padding-left: 45px
+
+.menu_left li:last-child
+  padding-left: 50px
+
+.menu_right li:last-child
+  padding-right: 110px
+  @media (max-width: 890px)
+    padding-right: 45px
+
+.menu_right li:first-child
+  padding-right: 50px
+
+.header_line
+  @media (max-width: 768px)
+    display: none
+  @media (max-width: 1366px)
+    width: 100%
+    height: 60px
+    background: rgba($white, $alpha)
+    position: absolute
+    top: 84px
+    z-index: 10
+  @media (min-width: 1366px)
+    width: 100%
+    height: 60px
+    background: rgba($white, $alpha)
+    position: absolute
+    top: 84px
+    z-index: 10
+  @media (min-width: 1920px)
+    top: 113px
+    z-index: 10
+
+.container
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  @media (max-width: 768px)
+    display: none
+  @media (min-width: 769px)
+    margin-top: 106px
+  @media (min-width: 1366px)
+    margin-top: 106px
+  @media (min-width: 1920px)
+    margin-top: 135px
+  z-index: 25
+
+.menu_left
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  list-style: none
+  margin: 0
+  z-index: 25
+
+.menu_right
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  list-style: none
+  margin: 0
+  z-index: 25
+
+ul a
+  text-decoration: none
+  color: $dark_blue
+
+ul a
+  text-decoration: none
+  color: $dark_blue
+
+.number_mail
+  @media (max-width: 768px)
+    display: none
+  position: absolute
+  right: 0
+  @media (max-width: 1366px)
+    top: 23px
+  @media (min-width: 1366px)
+    top: 23px
+  @media (min-width: 1920px)
+    top: 38px
+  box-sizing: border-box
+  height: 45px
+
+.email_img
+  @media (min-width: 768px)
+    display: none
+
+.number_mail > p
+  height: 17px
+  font-weight: 300
+  font-size: 24px
+  color: $dark_blue
+  line-height: 22px
+  font-family: $font
+  margin:
+    bottom: 7px
+
+.email
+  text-decoration: none
+  font-size: 18px
+  color: $dark_blue
+  letter-spacing: .45px
+  font-family: $font
+  cursor: pointer
+
+.facebook_img
+  width: 50px
+  height: 51px
+  @media (min-width: 768px)
+    width: 30px
+    height: 31px
+  cursor: pointer
+
+.instagram_img
+  width: 50px
+  height: 51px
+  @media (min-width: 768px)
+    width: 30px
+    height: 31px
+  cursor: pointer
+
+.social_media
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  float: right
+  margin-top: 113px
+  @media (min-width: 768px)
+    margin-top: 70px
+  cursor: pointer
+
+  .social_media_items
+    margin-bottom: 30px
+
+.description
+  position: absolute
+  @media (max-width: 768px)
+    top: 339px
+    left: calc(50% - (419px/2))
+    width: 419px
+    text-align: center
+  @media (min-width: 769px)
+    top: 339px
+    left: calc(50% - (731px/2))
+  @media (min-width: 1366px)
+    top: 339px
+    left: calc(50% - (731px/2))
+  @media (min-width: 1920px)
+    top: 442px
+    left: calc(50% - (735px/2))
+
+.description > h1
+  color: $white
+  font-family: $font
+  font-size: 72px
+  @media (max-width: 768px)
+    font-size: 60px
+    letter-spacing: .6px
+  font-weight: 300
+  line-height: 48px
+  letter-spacing: .72px
+  margin-block-end: 0
+
+.description > p
+  color: $white
+  font-family: $font
+  font-size: 30px
+  font-weight: 300
+  line-height: 48px
+  letter-spacing: .3px
+  margin:
+    top: 20px
+    //left: 58px
+  @media (min-width: 768px)
+    padding-left: 58px
+
+.call_me
+  text-decoration: none
+  height: 64px
+  width: 256px
+  @media (max-width: 768px)
+    display: none
+  position: absolute
+  @media (max-width: 1366px)
+    bottom: 195px
+  @media (min-width: 1366px)
+    bottom: 195px
+  @media (min-width: 1920px)
+    bottom: 364px
+  left: calc(50% - (256px/2))
+  background: transparent
+  border: 1px solid $white
+  border-radius: 3px
+  cursor: pointer
+
+.call_me_mobile
+  box-sizing: border-box
+  padding-bottom: 5px
+  text-decoration: none
+  height: 70px
+  width: 270px
+  background: $dark_blue
+  border: 1px solid $dark_blue
+  border-radius: 3px
+  cursor: pointer
+  position: absolute
+  top: 0
+  @media (max-width: 768px)
+    right: 45px
+  @media (min-width: 768px)
+    display: none
+
+.call_me_mobile > img
+  display: inline
+
+.call_me > p
+  color: #ffffff
+  font-family: $font
+  font-size: 24px
+  font-weight: 400
+  line-height: 23.68px
+  letter-spacing: 0.22px
+
+.call_me_mobile > p
+  display: inline
+  padding-left: 20px
+  color: #ffffff
+  font-family: $font
+  font-size: 24px
+  font-weight: 400
+  line-height: 23.68px
+  letter-spacing: 0.22px
+
+.hide
+  margin-left: 3.5%
+  margin-right: 3.5%
+  margin-top: 666px
+  @media (min-width: 768px)
+    display: none
+
+.menu_down
+  display: flex
+  justify-items: center
+  justify-content: space-between
+  flex-direction: row
+
+.menu_down > li
+  display: list-item
+  list-style: none
+  flex: 1
+  height: 20%
+  margin: 0 2%
+
+.down_container
+  background-color: $lite_blue
+  display: flex
+  height: 80px
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  border-radius: 10px
+  color: #ffffff
+  font-family: $font
+  cursor: pointer
+//------------------------------------------------header------------------------------
+
+
+
